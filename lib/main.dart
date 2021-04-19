@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
     _repository.signOut();
 
     return GetMaterialApp(
-      title: 'Hypessage',
+      title: 'My App',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: FutureBuilder(
