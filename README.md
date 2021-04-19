@@ -1,12 +1,11 @@
-# Hypessage
+# Flutter Auth Started Template
 
-Open source chat application
+Start off your projects with pre-configured methods and repositories for firebase authentication.
 
 ## Features
-- Chat
-- Phone calls
-- Video Calls
-- Offline/Available/Online status
-- Invite contacts
-- Status
+- SignUp
+- SignIn
+- SignOUt
+- Custom User fields
+- Getx state and route management
 
