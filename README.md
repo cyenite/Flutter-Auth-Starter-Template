@@ -1,4 +1,4 @@
-# Flutter Auth Started Template
+# Flutter Auth Starter Template
 
 Start off your projects with pre-configured methods and repositories for firebase authentication.
 
