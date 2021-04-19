@@ -20,9 +20,9 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget loginButton() {
-    return FlatButton(
-      padding: EdgeInsets.all(35),
-      child: Center(
+    return Center(
+      child: FlatButton(
+        padding: EdgeInsets.all(35),
         child: Text(
           'Login',
           style: TextStyle(
@@ -31,13 +31,14 @@ class _LoginScreenState extends State<LoginScreen> {
             letterSpacing: 1.2,
           ),
         ),
+        onPressed: () => performLogin(),
       ),
-      onPressed: () => performLogin,
     );
   }
 
   void performLogin() {
     _repository.signIn().then((user) {
+      print(user);
       if (user != null) {
         authenticateUser(user);
       } else {
