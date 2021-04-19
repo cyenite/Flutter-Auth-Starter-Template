@@ -22,6 +22,7 @@ class _MyAppState extends State<MyApp> {
 
     return GetMaterialApp(
       title: 'Hypessage',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: FutureBuilder(
           future: _repository.getCurrentUser(),

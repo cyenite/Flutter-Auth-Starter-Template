@@ -36,7 +36,7 @@ class FirebaseMethods {
         .getDocuments();
     final List<DocumentSnapshot> docs = result.documents;
 
-    return docs.length == 0 ? false : true;
+    return docs.length == 0 ? true : false;
   }
 
   Future<void> addDataToDb(FirebaseUser currentUser) async {
