@@ -22,12 +22,14 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget loginButton() {
     return FlatButton(
       padding: EdgeInsets.all(35),
-      child: Text(
-        'Login',
-        style: TextStyle(
-          fontSize: 35,
-          fontWeight: FontWeight.w900,
-          letterSpacing: 1.2,
+      child: Center(
+        child: Text(
+          'Login',
+          style: TextStyle(
+            fontSize: 35,
+            fontWeight: FontWeight.w900,
+            letterSpacing: 1.2,
+          ),
         ),
       ),
       onPressed: () => performLogin,
