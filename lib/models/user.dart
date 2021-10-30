@@ -38,4 +38,14 @@ class User {
     this.state = mapData['state'];
     this.profilePhoto = mapData['profile_photo'];
   }
+
+  User.froJson(Map<String, dynamic> JsonData) {
+    this.uid = JsonData['uid'];
+    this.name = JsonData['name'];
+    this.email = JsonData['email'];
+    this.username = JsonData['username'];
+    this.status = JsonData['status'];
+    this.state = JsonData['state'];
+    this.profilePhoto = JsonData['profile_photo'];
+  }
 }
